@@ -1,0 +1,12 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease; /* Applying transition */
+}
+
+.box.expanded {
+    width: 200px;
+    height: 200px;
+    background-color: #FF5722;
+}

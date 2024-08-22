@@ -1,0 +1,42 @@
+/* Use the CSS variables */
+
+:root {
+    --primary-color: 	#FFFF00;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+    --padding: 10px;
+}
+
+body {
+    font-size: var(--font-size);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: var(--padding);
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    margin: var(--padding) 0;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}

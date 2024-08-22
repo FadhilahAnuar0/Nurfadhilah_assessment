@@ -1,0 +1,37 @@
+.example {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    position: relative; 
+}
+
+/* Using ::before to add content before the paragraph */
+.example::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Using ::after to add content after the paragraph */
+.example::after {
+    content: "End of content.";
+    font-style: italic;
+    color: #666;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Using ::first-line to style the first line of the paragraph */
+.example p::first-line {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Using ::first-letter to style the first letter of the paragraph */
+.example p::first-letter {
+    font-size: 2rem;
+    color: #FF5722;
+    font-weight: bold;
+}
